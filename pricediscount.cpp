@@ -4,6 +4,7 @@
 #include <iostream>
 #include <numbers>
 #include <cmath>
+#include <iomanip>
 using namespace std;
 
 int main() {
@@ -16,5 +17,6 @@ int main() {
     cout << "Please enter the value for discount: ";
     cin >> discount;
     priceafterdiscount = price - (price * discount/100.0);
+    cout << fixed << setprecision(2) << endl;
     cout << "The price after discount is " << "$" << priceafterdiscount << endl;
 }
